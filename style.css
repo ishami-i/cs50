@@ -1,0 +1,108 @@
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #d1f0d1;
+    transition: 0.3s;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.8em;
+    margin: 10px;
+    font-weight: 800;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="text"] {
+    padding: 8px 12px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer {
+    padding: 0% 20px 20px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center; 
+}
+button:hover {
+    background-color: #45a049;
+}
+
+/* Completed tasks list */
+#progress {
+    width: 80%;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+}
+
+#completed-tasks li {
+    margin: 5px 0;
+    padding: 6px 10px;
+    border-left: 4px solid #4CAF50;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#completed-tasks li:hover {
+    background-color: #e6ffe6;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    table, input[type="text"], button {
+        width: 95%;
+    }
+}

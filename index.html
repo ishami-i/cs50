@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+<header> 
+    <h1>My To-Do List</h1>
+    <p>Welcome to my to-do list application! Here you can add tasks you want to accomplish and track your progress as you complete them.</p>
+</header>
+    <main>
+        <div>
+            <h2>How it works</h2>
+            <p>Here you add the task you want to do, then check when it's done.</p>
+            <p>Where you add the task:</p>
+    
+            <!-- Input Fields -->
+             <form id="task-form">
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" required><br><br>
+    
+            <label for="due-time">Due time:</label>
+            <input type="text" id="due-time" name="due-time" required><br><br>
+    
+            <button id="add-task" onclick="insertRow()">Add Task</button>
+            </form>
+        </div>
+    
+        <!-- To-do table -->
+        <table id="todo-table">
+            <caption>My To-Do List</caption>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Time</th>
+                    <th>Select (if done)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Learn HTML</td>
+                    <td>Today</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Learn CSS</td>
+                    <td>Tomorrow</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Learn JavaScript</td>
+                    <td>This week</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Build a project</td>
+                    <td>This month</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <!-- Progress showing completed tasks -->
+        <div id="progress">
+            <h3>Progress</h3>
+            <p>The tasks that have been completed will be shown here:</p>
+            <ul id="completed-tasks">
+
+                <!-- Completed tasks will be added here -->
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Created by Ishami Irené<br>
+        Github: <a href="https://github.com/ishami-i/" target="_blank">ishami-i</a><br>
+        Email: <a href="mailto:i.irene@alustudent.com" target="_blank">i.irene@alustudent.com</a><br>
+        &copy; 2025     ISHAMI Irené. All rights reserved.
+        </p>
+    </footer> 
+</body>
+</html>
